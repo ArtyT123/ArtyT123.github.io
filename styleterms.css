@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    animation: colorchange 360s infinite;
+    -webkit-animation: colorchange 360s infinite;
+    z-index: -1;
+ }
+
+ @keyframes colorchange {
+      0%   {background: rgb(109, 189, 224);}
+      12.5%  {background: plum;}
+      25%  {background: rgb(139, 209, 139);}
+      37.5%  {background: rgb(209, 139, 139);}
+      50% {background: rgb(209, 199, 139);}
+      62.5% {background: rgb(139, 209, 194);}
+      75% {background: rgb(209, 171, 139);}
+      87.5% {background: rgb(120, 120, 120);}
+      100% {background: rgb(109, 189, 224);}
+}
+
+@-webkit-keyframes colorchange {
+        0%   {background: rgb(109, 189, 224);}
+        12.5%  {background: plum;}
+        25%  {background: rgb(139, 209, 139);}
+        37.5%  {background: rgb(209, 139, 139);}
+        50% {background: rgb(209, 199, 139);}
+        62.5% {background: rgb(139, 209, 194);}
+        75% {background: rgb(209, 171, 139);}
+        87.5% {background: rgb(120, 120, 120);}
+        100% {background: rgb(109, 189, 224);}
+}
+
+@keyframes animate {
+    0% {
+      background-position: -300%;
+    }
+    100% {
+      background-position: 300%;
+    }
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-left: 35%;
+  border-bottom: 4px rgba(0, 0, 0, 0) solid;
+  transition: 0.3s;
+}
+
+input:hover {
+    border-bottom: 4px rgb(109, 189, 224) solid;
+}
+
+input:focus {
+    border-bottom: 4px rgb(109, 189, 224) solid;
+}
+
+/* Set a style for all buttons */
+.login {
+  font-size: 1.2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(109, 189, 224);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 40%;
+  margin-top: 1%;
+  width: 20%;
+  transition: 0.5s;
+}
+
+button:hover {
+    transform: scale(1.1, 1.1);
+}
+
+button:active {
+    transform: scale (0.9, 0.9);
+}
+
+.checkbox {
+    margin-top: 5vw;
+    margin-left: 43%;
+    color: white;
+}
+
+.uname {
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 35%;
+    transition: 0.5s;
+}
+
+.uname:hover {
+    transform: scale(1.05, 1.05);
+    color: rgb(109, 189, 224);
+}
+
+.psw {
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 35%;
+    transition: 0.5s;
+}
+
+.psw:hover {
+    transform: scale(1.05, 1.05);
+    color: rgb(109, 189, 224);
+}
+
+.cancelbtn {
+    position: absolute;
+    font-size: 1vw;
+    color: white;
+    width: 6%;
+    height: 5%;
+    padding: 10px 18px;
+    background: rgba(50, 50, 50, 0.25);
+    margin-right: 1vw;
+    margin-top: -3vw;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 38%;
+}
+
+.logolabel {
+  font-size: 1vw;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  transition: 0.5s;
+}
+
+.logolabel:hover {
+  color: rgb(109, 189, 224);
+}
+
+.container {
+  padding: 1vw;
+}
+
+span.psw {
+  text-align: center;
+  margin-left: 30%;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: scroll;
+  padding-top: 1%;
+}
+
+.heading {
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    transition: 0.5s;
+}
+
+.heading:hover {
+    transform: scale(1.05, 1.05);
+    color: rgb(109, 189, 224);
+}
+
+.white-overlay {
+    cursor: default;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.0), rgb(255, 255, 255));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgba(50, 50, 50, 0.5);
+  margin: 4% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%;
+  height: auto;
+  border: 1px solid transparent;
+  border-radius: 15px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.terms {
+    font-size: 0.9vw;
+    color: white;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.terms2 {
+    font-size: 0.8vw;
+    color: white;
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 10%;
+}
+
+.termsheading {
+    font-size: 1vw;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.termsheading:hover {
+    color: rgb(109, 189, 224);
+}
